@@ -11,10 +11,6 @@ openai.api_key = "YOUR API KEY HERE"
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# Dictionary to store character experience
-experience = {}
-
-
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
